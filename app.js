@@ -18,6 +18,7 @@ http.createServer(function(req, res) {
     res.end();
   } else if (path == "/assets/style.css") {
       sendf(res, "assets/style.css")
+      res.end();
   }
 }).listen(port);
 
