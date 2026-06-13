@@ -1,6 +1,6 @@
 const url = require("url")
 const http = require("https")
-const port = 8080
+const port = 10000
 const fs = require("fs")
 http.createServer(function(req, res) {
   const urlpath = url.parse(req.url, true)
@@ -26,4 +26,3 @@ function sendf(res, file) {
     res.write(fs.readFileSync(__dirname + "/" + file));
     res.end();
 }
-run().catch(console.dir);
