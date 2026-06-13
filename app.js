@@ -12,11 +12,12 @@ http.createServer(function(req, res) {
   }
   console.log("Method requested: " + req.method + ", with endpoint " + path);
   if (path == "/") {
-    res.write("hi!");
-    res.end();
+    sendf(res, "index.html");
   } else if (path == "/status") {
-    res.write("hello I'm healthy");
+    res.write("Good");
     res.end();
+  } else if (path == "/assets/style.css") {
+      sendf(res, "assets/style.css")
   }
 }).listen(port);
 
