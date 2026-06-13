@@ -1,0 +1,24 @@
+{
+  "name": "ACBFBank",
+  "version": "1.0.0",
+  "description": "ACBFBank is a cool fun bank.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "example"
+  ],
+  "author": "WarriorKiller1098",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
