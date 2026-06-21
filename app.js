@@ -59,7 +59,7 @@ http.createServer(function(req, res) {
                 const cdatab = Buffer.concat(reqb).toString();
                 console.log("Processed request data body: ", cdatab);
                 res.writeHead(200);
-                res.write(checkb(1, JSON.parse(cdatab).toString());
+                res.write(checkb(1, JSON.parse(cdatab).toString()));
             });
             
             req.on('error', (err) => {
